@@ -1,7 +1,7 @@
 {
   "name": "waitforapi",
   "version": "1.0.0",
-  "description": "waitForApi is an enhanced version of Playwright's waitForResponse, designed to reliably wait for API responses with built-in retry logic, timeout handling, and detailed error logging. This package helps testers and developers efficiently handle asynchronous API calls during end-to-end (E2E) testing with Playwright.",
+  "description": "waitforapi is an enhanced version of Playwright's waitForResponse, designed to reliably wait for API responses with built-in retry logic, timeout handling, and detailed error logging. This package helps testers and developers efficiently handle asynchronous API calls during end-to-end (E2E) testing with Playwright.",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghostinlinux/waitForApi.git"
+    "url": "git+https://github.com/ghostinlinux/waitforapi.git"
   },
   "keywords": [
-    "waitForApi",
+    "waitforapi",
     "Playwright"
   ],
   "author": "Pratik Kumar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ghostinlinux/waitForApi/issues"
+    "url": "https://github.com/ghostinlinux/waitforapi/issues"
   },
-  "homepage": "https://github.com/ghostinlinux/waitForApi#readme",
+  "homepage": "https://github.com/ghostinlinux/waitforapi#readme",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@rollup/plugin-typescript": "^12.1.2",

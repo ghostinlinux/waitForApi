@@ -1,22 +1,22 @@
-# waitForApi
+# waitforapi
 
 ## Introduction
 
-`waitForApi` is an enhanced version of Playwright's waitForResponse, designed to reliably wait for API responses with built-in retry logic, timeout handling, and detailed error logging. This package helps testers and developers efficiently handle asynchronous API calls during end-to-end (E2E) testing with Playwright.
+`waitforapi` is an enhanced version of Playwright's waitForResponse, designed to reliably wait for API responses with built-in retry logic, timeout handling, and detailed error logging. This package helps testers and developers efficiently handle asynchronous API calls during end-to-end (E2E) testing with Playwright.
 
 ## Installation
 
-To install `waitForApi`, run:
+To install `waitforapi`, run:
 
 ```sh
-npm install waitForApi
+npm install waitforapi
 ```
 
 ## Usage
 
 ```typescript
 import { test } from "@playwright/test";
-import { API_METHODS, API_STATUS, waitForApi } from "waitForApi";
+import { API_METHODS, API_STATUS, waitForApi } from "waitforapi";
 
 test("get started link", async ({ page }) => {
   await page.goto(

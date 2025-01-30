@@ -6,7 +6,7 @@ export default defineConfig({
   output: {
     dir: "dist",
     format: "es",
-    name: "waitForApis",
+    name: "waitforapi",
   },
   plugins: [typescript({ tsconfig: "tsconfig.json" })],
   external: ["@playwright/test"],
