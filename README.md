@@ -15,6 +15,26 @@ npm install waitforapi
 ## Usage
 
 ```typescript
+/**
+ * waitForApi(params: { endpoint, status: API_STATUS, requestMethod: API_METHODS, page, API_TIMEOUT?, MAX_ATTEMPTS? })
+ * Default API Timeout: 10000ms (10 seconds)
+ * Default Max Attempts: 2
+ * Waits for a successful API response.
+ */
+
+await waitForApi({
+  endpoint: "https://api.example.com/data",
+  status: API_STATUS.OK,
+  requestMethod: API_METHODS.GET,
+  page: page,
+  API_TIMEOUT: 5000, // Default is 10 seconds
+  MAX_ATTEMPTS: 4, // Default is 2
+});
+```
+
+## Example
+
+```typescript
 import { test } from "@playwright/test";
 import { API_METHODS, API_STATUS, waitForApi } from "waitforapi";
 
@@ -44,7 +64,7 @@ test("get started link", async ({ page }) => {
 });
 ```
 
-## We have
+## Supported HTTP status codes:
 
 ```
 API_STATUS = {
@@ -58,6 +78,8 @@ API_STATUS = {
   INTERNAL_SERVER_ERROR = 500,
 }
 ```
+
+## Supported HTTP methods:
 
 ```
 API_METHODS = {
